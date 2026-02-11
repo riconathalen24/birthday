@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("../images/background.png");
+  color: #fff;
+}
+
+/* ===== PARTICLES ===== */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===== FLOATING CARDS ===== */
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.card {
+  position: absolute;
+  width: 220px;
+  height: 300px;
+  border-radius: 16px;
+  border: 10px solid #fff;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+
+  will-change: transform;
+  transform-origin: center center;
+  z-index: 1;
+
+  box-shadow:
+    0 30px 60px rgba(0,0,0,.35),
+    inset 0 0 0 1px rgba(255,255,255,.35);
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* glass */
+.hero-glass {
+  padding: 73px 86px;
+  border-radius: 28px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  backdrop-filter: blur(22px);
+  box-shadow: 0 40px 120px rgba(0,0,0,.45);
+}
+
+/* ===== CONTENT ===== */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 420px;
+}
+
+.hero-content h1 {
+  font-family: 'Allura', cursive;
+  font-size: 58px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,.35);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: .85;
+  margin-bottom: 32px;
+}
+
+.hero-content button {
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.hero-content button:hover {
+  opacity: .9;
+  background: #000;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ===== MOBILE BLOCK ===== */
+.mobile-block {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #particles,
+  .background,
+  .hero {
+    display: none !important;
+  }
+
+  .mobile-block {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg,#f8dfe8,#e8e6f7);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    padding: 32px;
+    flex-direction: column;
+  }
+}
+
+/* HARD MOBILE BLOCK */
+@media (hover: none) and (pointer: coarse) {
+  #particles,
+  .background,
+  .hero {
+    display: none !important;
+  }
+
+  .mobile-block {
+    display: flex !important;
+  }
+}

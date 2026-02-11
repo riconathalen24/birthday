@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("../images/background.png");
+}
+
+/* ===== PARTICLES ===== */
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===== MEMORIES ===== */
+.memories-section {
+  position: relative;
+  z-index: 2;
+  padding: 100px 10vw 140px;
+  text-align: center;
+}
+
+.memories-section h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 3 / 3;
+  padding-top: 65%; 
+  border-radius: 18px;
+  overflow: hidden; /* WAJIB */
+  background-size: 110%; /* 👈 default lebih kecil */
+  background-position: center;
+  background-color: #e8dff0;
+  filter: grayscale(100%);
+}
+
+.photo:hover {
+  filter: grayscale(0%);
+  background-size: 115%; 
+  transition:
+    background-size .6s ease,
+    filter .4s ease;
+}
+
+/* FOTO */
+.p1 { background-image: url("../images/img7.jpeg"); }
+.p2 { background-image: url("../images/img11.jpg"); }
+.p3 { background-image: url("../images/img8.jpeg"); }
+.p4 { background-image: url("../images/img12.jpg"); }
+.p5 { background-image: url("../images/img9.jpeg"); }
+.p6 { background-image: url("../images/img19.jpg"); }
+
+.scroll-gap {
+  height: 180px;
+}
+
+.message-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 160px;
+  position: relative;
+  z-index: 3;
+}
+
+.message-card {
+  width: 540px;
+  padding: 46px;
+  text-align: center;
+  color: #000000;
+
+  border-radius: 26px;
+  backdrop-filter: blur(1px);
+  background: #e0e0e0;
+  border: 0px solid rgba(90,5,90,.14);
+}
+
+.message-card h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  margin-bottom: 22px;
+}
+
+.message-card p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.highlight {
+  font-style: italic;
+  color: #000000;
+}
+
+/* ===== BUTTONS ===== */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 26px;
+}
+
+button {
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: #000000;
+  color: #fff;
+  transition: .25s ease;
+}
+
+button:hover {
+  background: #c5c5c5;
+  color: #4f2758;
+  transform: translateY(-1px);
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity .9s ease, transform .9s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
