@@ -46,8 +46,8 @@ body {
   aspect-ratio: 3 / 3;
   padding-top: 65%; 
   border-radius: 18px;
-  overflow: hidden; /* WAJIB */
-  background-size: 110%; /* 👈 default lebih kecil */
+  overflow: hidden; 
+  background-size: 110%; 
   background-position: center;
   background-color: #e8dff0;
   filter: grayscale(100%);
@@ -110,7 +110,7 @@ body {
   color: #000000;
 }
 
-/* ===== BUTTONS ===== */
+/* BUTTONS */
 .actions {
   display: flex;
   justify-content: center;
@@ -135,7 +135,7 @@ button:hover {
   transform: translateY(-1px);
 }
 
-/* ===== SCROLL REVEAL ===== */
+/* SCROLL REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(50px);

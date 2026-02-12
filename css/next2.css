@@ -180,7 +180,7 @@ body {
 .letter h2 { margin: 2px 0; font-size: 28px; color: #3b3b3b; }
 .main-emoji { font-size: 35px; color: #eb2f06; }
 
-/* ANIMASI POP OUT */
+/* POP OUT */
 .letter.pop-out {
     transform: translateX(-50%) translateY(-150px) scale(1.1);
     z-index: 10;

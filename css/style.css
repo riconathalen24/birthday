@@ -12,7 +12,7 @@ body {
   color: #fff;
 }
 
-/* ===== PARTICLES ===== */
+/* PARTICLES */
 #particles {
   position: fixed;
   inset: 0;
@@ -20,7 +20,7 @@ body {
   pointer-events: none;
 }
 
-/* ===== FLOATING CARDS ===== */
+/* FLOATING CARDS */
 .background {
   position: fixed;
   inset: 0;
@@ -46,7 +46,7 @@ body {
     inset 0 0 0 1px rgba(255,255,255,.35);
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
   position: relative;
   z-index: 5;
@@ -71,7 +71,7 @@ body {
   box-shadow: 0 40px 120px rgba(0,0,0,.45);
 }
 
-/* ===== CONTENT ===== */
+/* CONTENT */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -127,7 +127,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* ===== MOBILE BLOCK ===== */
+/* MOBILE BLOCK */
 .mobile-block {
   display: none;
 }

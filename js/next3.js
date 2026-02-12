@@ -1,4 +1,3 @@
-// kecil tapi kepake: animasi fade-in pas load
 document.addEventListener("DOMContentLoaded", () => {
   const surat = document.querySelector(".surat");
   surat.style.opacity = 0;

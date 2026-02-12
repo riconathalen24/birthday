@@ -66,7 +66,7 @@ backBtn.addEventListener("click", () => {
     }, 500);
 });
 
-// ===== "NO" BUTTON =====
+// ===== NO BUTTON =====
 const prevBtn = document.getElementById("backBtn");
 let dodge = 0;
 
