@@ -71,13 +71,13 @@ const prevBtn = document.getElementById("backBtn");
 let dodge = 0;
 
 prevBtn.addEventListener("mouseenter", () => {
-  if (dodge >10) return;
+  if (dodge >40) return;
   dodge++;
   prevBtn.style.transform =
     `translate(${Math.random()*160-80}px, ${Math.random()*120-60}px)`;
 });
 
 prevBtn.addEventListener("click", e => {
-  if (dodge < 10) e.preventDefault();
+  if (dodge < 40) e.preventDefault();
   else go("next.html");
 });

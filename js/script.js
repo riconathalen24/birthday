@@ -133,7 +133,7 @@ if (isMobileDevice() || isIOSSafari()) {
       padding:40px;
       flex-direction:column;
     ">
-      <h2 style="margin-bottom:16px;">AHAHAHA GABISA DIBUKA 😜</h2>
+      <h2 style="margin-bottom:16px;">AHAHAHA GABISA DIBUKA</h2>
       <p>Buka dari laptop yaa.</p>
     </div>
   `;
