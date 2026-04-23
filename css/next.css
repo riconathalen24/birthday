@@ -20,7 +20,7 @@ body {
   pointer-events: none;
 }
 
-/* ===== MEMORIES ===== */
+/* ===== GRID ===== */
 .memories-section {
   position: relative;
   z-index: 2;
